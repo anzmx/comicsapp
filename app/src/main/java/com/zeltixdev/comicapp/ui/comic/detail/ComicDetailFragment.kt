@@ -25,11 +25,11 @@ class ComicDetailFragment : Fragment() {
     private val args: ComicDetailFragmentArgs by navArgs()
 
     @Inject
-    lateinit var photoDetailViewModelAssistedFactory: ComicDetailViewModel.AssistedFactory
+    lateinit var comicDetailViewModelAssistedFactory: ComicDetailViewModel.AssistedFactory
 
-    private val photoDetailViewModel: ComicDetailViewModel by viewModels {
+    private val comicDetailViewModel: ComicDetailViewModel by viewModels {
         ComicDetailViewModel.provideFactory(
-                photoDetailViewModelAssistedFactory, ComicInitParams(args.comicId)
+                comicDetailViewModelAssistedFactory, ComicInitParams(args.comicId)
         )
     }
 
@@ -51,7 +51,7 @@ class ComicDetailFragment : Fragment() {
     }
 
     private fun initViewModelCallbacks() {
-        photoDetailViewModel.apply {
+        comicDetailViewModel.apply {
             displayComic.observe(viewLifecycleOwner, { comic: Comic ->
                 Glide.with(requireContext())
                     .load(comic.thumbnail.url())
