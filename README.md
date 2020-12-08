@@ -1,6 +1,6 @@
 # ComicsApp
 Sample Android App using Marvel's API
-* gradle.properties is not versioned to prevent unwanted use of Marvel's API.
+* gradle.properties is missing Marvel's API keys.
 * Offline persistence using Room DB as cache.
 
 # Architecture overview
