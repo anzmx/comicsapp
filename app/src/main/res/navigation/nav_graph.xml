@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/ListFragment">
+
+    <fragment
+        android:id="@+id/ListFragment"
+        android:name="com.zeltixdev.comicapp.ui.comic.list.ComicListFragment"
+        android:label="@string/list_fragment_label"
+        tools:layout="@layout/fragment_comic_list">
+
+        <action
+            android:id="@+id/action_ListFragment_to_DetailFragment"
+            app:destination="@id/DetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/DetailFragment"
+        android:name="com.zeltixdev.comicapp.ui.comic.detail.ComicDetailFragment"
+        android:label="@string/detail_fragment_label"
+        tools:layout="@layout/fragment_comic_detail">
+
+        <action
+            android:id="@+id/action_DetailFragment_to_ListFragment"
+            app:destination="@id/ListFragment" />
+        <argument
+            android:name="comicId"
+            android:defaultValue="0"
+            app:argType="string" />
+    </fragment>
+</navigation>

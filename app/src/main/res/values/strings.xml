@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Marvel Comics</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="list_fragment_label">List Fragment</string>
+    <string name="detail_fragment_label">Detail Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="copyright_notice">Data provided by Marvel. © 2020 MARVEL</string>
+</resources>
