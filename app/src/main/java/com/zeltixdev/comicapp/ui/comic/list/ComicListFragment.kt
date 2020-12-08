@@ -6,7 +6,6 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
-import androidx.navigation.fragment.FragmentNavigatorExtras
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
 import com.zeltixdev.comicapp.databinding.FragmentComicListBinding
@@ -14,6 +13,7 @@ import com.zeltixdev.comicapp.networking.Status
 import com.zeltixdev.comicapp.ui.comic.list.adapter.ComicListAdapter
 import com.zeltixdev.comicapp.ui.comic.list.adapter.GridSpacingItemDecoration
 import dagger.hilt.android.AndroidEntryPoint
+
 
 @AndroidEntryPoint
 class ComicListFragment : Fragment() {
