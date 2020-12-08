@@ -1,5 +1,5 @@
-# PhotoApp
-Sample Android App to browse photos provided by picsum.photos written 100% in Kotlin
+# ComicsApp
+Sample Android App using Marvel's API
 # Architecture overview
 This sample app uses 
 * Dagger/Hilt
